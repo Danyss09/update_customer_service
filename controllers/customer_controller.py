@@ -1,6 +1,7 @@
 from flask import Blueprint, request, jsonify
 from models.customer_models import update_customer
 from services.db_config import get_connection
+
 customer_controller = Blueprint('customer_controller', __name__)
 
 # Ruta para actualizar un cliente

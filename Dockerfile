@@ -8,8 +8,8 @@ WORKDIR /app
 COPY . /app
 
 # Instala las dependencias del proyecto
-RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install cryptography
+RUN pip install --no-cache-dir -r requirements.txt cryptography
+
 # Expone el puerto en el que la aplicación va a correr
 EXPOSE 5000
 
