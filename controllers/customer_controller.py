@@ -25,6 +25,6 @@ def update_customer_route():
         if updated_customer:
             return jsonify(updated_customer), 200  # Cliente actualizado con éxito
         else:
-            return jsonify({'error': 'Customer not found :c'}), 404  # Cliente no encontrado
+            return jsonify({'error': 'Customer not found '}), 404  # Cliente no encontrado
     except Exception as e:
         return jsonify({'error': str(e)}), 500  # Error en el servidor
